@@ -36,8 +36,12 @@ filetype plugin indent on "类型支持
 "快捷键
 nmap <s-tab> V<
 nmap <tab> V>
+vmap <s-tab> V<
+vmap <tab> V>
 map <C-l>  gt
 map <C-h> gT
 map <C-w> :tabc<cr>
-imap <C-Q> <Esc><cr>
-map <C-Q> <Esc><cr>
+imap <C-j> <Esc>ji
+imap <C-k> <Esc>ki
+imap <C-y> <Esc>^i
+imap <C-p> <Esc>$a
