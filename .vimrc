@@ -41,7 +41,12 @@ vmap <tab> V>
 map <C-l>  gt
 map <C-h> gT
 map <C-w> :tabc<cr>
+map <C-k> k
+map <C-y> 0
+map <C-p> $
 imap <C-j> <Esc>ji
 imap <C-k> <Esc>ki
 imap <C-y> <Esc>^i
 imap <C-p> <Esc>$a
+imap <C-s> <Esc>:wi
+map <C-s> <Esc>:w
