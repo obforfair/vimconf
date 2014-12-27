@@ -8,6 +8,7 @@ set softtabstop=4 " 使得按退格键时可以一次删掉 4 个空格
 set tabstop=4 " 设定 tab 长度为 4
 set nobackup " 覆盖文件时不备份
 set autochdir " 自动切换当前目录为当前文件所在的目录
+set autoread "自动载入修改
 set backupcopy=yes " 设置备份时的行为为覆盖
 set ignorecase smartcase " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
 set nowrapscan " 禁止在搜索到文件两端时重新搜索
@@ -38,14 +39,16 @@ nmap <s-tab> V<
 nmap <tab> V>
 vmap <s-tab> V<
 vmap <tab> V>
-map <C-l>  gt
-map <C-h> gT
+nmap <C-h>  gt
+nmap <C-l> gT
 map <C-w> :tabc<cr>
 map <C-k> k
 map <C-y> 0
 map <C-p> $
 imap <C-j> <Esc>ji
 imap <C-k> <Esc>ki
+imap <C-h> <Esc>hi
+imap <C-l> <Esc>li
 imap <C-y> <Esc>^i
 imap <C-p> <Esc>$a
 imap <C-s> <Esc>:wi
